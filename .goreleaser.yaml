@@ -2,7 +2,7 @@ version: 2
 
 # Use the auto-generated changelog github provides
 changelog:
-  use: github
+  use: github-native
 
 # Generate a GitHub release and publish the release for the tag
 # NOTE: We are explicitly adding the init-packages that are built prior to GoReleaser stage in the GitHub Actions workflow
