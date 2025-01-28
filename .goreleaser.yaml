@@ -11,7 +11,7 @@ builds:
 
 # Use the auto-generated changelog github provides
 changelog:
-  use: github-native
+  use: github
 
 archives:
   - format: binary
