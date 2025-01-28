@@ -8,7 +8,7 @@ changelog:
 # NOTE: We are explicitly adding the init-packages that are built prior to GoReleaser stage in the GitHub Actions workflow
 release:
   github:
-    owner: zarf-dev
-    name: zarf
+    owner: austinabro321
+    name: goreleaser-test 
   prerelease: auto
   mode: append
