@@ -1,0 +1,27 @@
+version: 2
+
+# Build the different combination of goos/arch binaries
+builds:
+  - env:
+      - CGO_ENABLED=0
+    goos:
+      - linux
+      - darwin
+      - windows
+
+# Use the auto-generated changelog github provides
+changelog:
+  use: github-native
+
+archives:
+  - format: binary
+    name_template: "{{ .ProjectName }}_{{ .Tag }}_{{- title .Os }}_{{ .Arch }}"  
+
+# Generate a GitHub release and publish the release for the tag
+# NOTE: We are explicitly adding the init-packages that are built prior to GoReleaser stage in the GitHub Actions workflow
+release:
+  github:
+    owner: zarf-dev
+    name: zarf
+  prerelease: auto
+  mode: append
