@@ -9,3 +9,5 @@ import "goreleaser-test.example.com/src"
 func main() {
 	src.DoThing()
 }
+
+
