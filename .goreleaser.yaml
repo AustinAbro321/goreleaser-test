@@ -12,3 +12,5 @@ release:
     name: goreleaser-test 
   prerelease: auto
   mode: append
+
+
